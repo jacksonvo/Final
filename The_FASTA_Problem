@@ -4,3 +4,8 @@ import glob
 path = 'fasta_problem' #takes us into the folder
 for infile in glob.glob( os.path.join(path, '*.seq') ):
     print infile #prints the names of all files in folder
+
+#go into the folder "fasta_problem"
+cd fasta_problem
+#takes all files ending in .seq and combined them into a single file
+cat *.seq > seqcombined.fasta 
